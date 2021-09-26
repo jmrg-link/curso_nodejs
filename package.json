@@ -1,0 +1,22 @@
+{
+  "name": "backend-nodejs",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <h1>Curso de Node.js</h1>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/3/32/Platzi.jpg\" alt=\"platzi logo\" height=\"300px\">   <h3 style=\"font-weight:bold;\" >Curso de Nodejs (4H)</h3>   <h5></h5> </div>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmrg-link/curso_nodejs.git"
+  },
+  "author": "jmrg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmrg-link/curso_nodejs/issues"
+  },
+  "homepage": "https://github.com/jmrg-link/curso_nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
