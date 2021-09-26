@@ -134,7 +134,7 @@ Protocolos:
 
 ---
 
-#### SEND : CUERPO DE LA PETICION
+#### REQUEST - RESPONSE : CUERPO DE LA PETICION
 * Es la información en sí que queremos enviar, editar o que el servidor nos devuelva.
   * Los datos del usuario que quieras añadir
 * El qué contenga y como venga va a depender de las cabeceras.
