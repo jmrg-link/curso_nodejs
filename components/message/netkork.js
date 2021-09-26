@@ -1,23 +1,28 @@
 // component/message/network.js
 const express = require('express')
 const response = require('../../network/response')
+const controller = require('./controller')
 const router = express.Router()
-// GEt
+
+// GET
 router.get('/', (req, res) => {
-    console.log(req.headers)
+
     res.header({
         "custom-header": "value custom"
     })
     response.success(req, res, 'Lista de mensajes:')
 })
+
 // POST
 router.post('/', (req, res) => {
-    if(req.query.error =='ok'){
-        response.error(req, res, 'Error inesperado', 500, 'Es solo una simulacion de error')
-    } else {
-        response.success(req, res, 'Msg creado correctamente',201)
-    }
+    controller.addMesage(req.body.user,req.body.msg)
+        .then((fullMsg)=>{
+        response.success(req, res, fullMsg , 201)
+    }).catch(e => {
+        response.error(req, res, 'Informacion invalida', 400, 'Error en el controller')
+    })
 })
+
 // DELETE
 router.delete('/', (req, res) => {
     console.log(req.body)
