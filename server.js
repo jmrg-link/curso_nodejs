@@ -6,17 +6,21 @@ const router = express.Router()
 app.use(express.json());
 app.use(router)
 
-app.get('/message',(req,res)=>{
+router.get('/message',(req,res)=>{
+    console.log(req.headers)
+    res.header({
+        "custom-header":"value custom"
+    })
     res.send('Lista de msg')
 })
 
-app.post('/message',(req,res)=>{
+router.post('/message',(req,res)=>{
     console.log(req.body)
     res.send('msg añadido correctamente')
 
 })
 
-app.delete('/message',(req,res)=>{
+router.delete('/message',(req,res)=>{
     console.log(req.body)
     console.log(req.query)
     res.send(`Mensaje ${req.body.text} añadido correctamente` )
