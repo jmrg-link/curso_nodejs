@@ -150,4 +150,4 @@ Protocolos:
     * 403 Forbidden
     * 404 Not Found
   * Errores del servidor, ha habido un error al procesar la petición **5XX**
-    *500 Internal server error
+    * 500 Internal server error
