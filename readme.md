@@ -23,5 +23,10 @@
 
 ## Listado de Temas del Curso: 💯
     *   Curso de Node.js
-
-#### Http
+---
+#### **Metodos/Verbos de Peticiones HTTP**
+* En https://developer.mozilla.org/es/docs/Web/HTTP/Methods y https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto, Mozilla y Wikipedia señalan los metodos que pueden ser utilizados.
+  * RFCs:
+    * RFC 2518: https://tools.ietf.org/html/rfc2518
+    * RFC 2616: https://tools.ietf.org/html/rfc2616
+    * RFC 3253: https://tools.ietf.org/html/rfc3253
