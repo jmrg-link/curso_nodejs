@@ -114,6 +114,7 @@ Protocolos:
      * **Accept** - Define el contenido que acepta
      * 
 ---
+     
 #### ESTADOS
 
 * Números que indican lo que ha pasado con la petición.
