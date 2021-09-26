@@ -133,3 +133,27 @@ Protocolos:
     * 500 Internal server error
 
 ---
+
+#### SEND : CUERPO DE LA PETICION
+* Es la información en sí que queremos enviar, editar o que el servidor nos devuelva.
+  * Los datos del usuario que quieras añadir
+* El qué contenga y como venga va a depender de las cabeceras.
+  * Content-Type: Tipo de contenido.
+  * Lista de Cabeceras:
+    *   text/html
+    *   text/css
+    *   application/javascript
+    *   image/jpeg
+    *   application/json
+    *   application/xml
+  Content-Length: Que tan largo es el contenido
+  * Los datos en crudo, pueden venir en dos formatos, JSON, o XML.
+  JSON, tiene un formato muy parecido a los objetos en JavaScript
+  
+* <h4>Las Queries - Las Consultas</h4>
+  * Van a permitirte añadir información extra a los datos que queramos enviarle al servidor. O solicitar.
+
+  * Orden en el que queramos que se devuelvan los datos.
+  Parámetros que queremos medir.
+  * < Url >.com/person**?orderBy=name&age=25**
+    * Aqui lo que hacemos es solicitar las personas de una API pero le estamos añadiendo que se ordene por nombre y que solo nos traiga las personas cuya edad sea 25 años.
