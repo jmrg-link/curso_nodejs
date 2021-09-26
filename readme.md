@@ -105,4 +105,49 @@ Protocolos:
 
 ---
 
-####
+#### METODOS HTTP
+* Es el verbo, la acción que le dice al server “lo que queremos hacer”
+
+  * **GET** → Solicita información del servidor
+  Información de productos
+  Listado de elementos
+  Ver pagina HTML o un archivo CSS o JS
+  * **POST** → Añade información al server
+  Añadir un producto nuevo
+  Enviar un formulario
+  * **PUT**→ Reemplazar información en el servidor
+  Cambiar un producto por completo
+  Cambiar el contenido de una pagina
+  Editar un mensaje
+  * **PATCH** → Actualiza parte de la información
+  Cambiar la foto de usuario
+  Modificar el precio de un producto
+  * **DELETE** → Elimina información del servidor
+  Eliminar un mensaje
+  Quitar producto de carrito
+  * **OPTIONS** → Pedir información sobre métodos (saber si podemos ejecutar alguno de los métodos anteriores)
+
+#### HEADER - CABECERAS -> HTTP
+ * Información contextual de la petición. "No es el que quiero hacer, sino cómo lo quiero hacer".
+   * Request - **POST PUT PATCH**
+     * **Autenticación** - Asegurarte de que puedes pedir cosas al servidor
+     * **Cache** Almacenamiento temporal - Gestionar durante cuánto tiempo la respuesta será la misma
+     * **Cors** “Cross Origin Resource Sharing” - Manejar información desde fuera de nuestro servicio
+     * **Cookies** - Compartir información entre peticiones
+     * **Accept** - Define el contenido que acepta
+
+#### ESTADOS
+* Números que indican lo que ha pasado con la petición.
+  * Todo ha ido bien **2XX**
+    * 200: Ok
+    * 201: Created
+  * La petición se ha redirigido **3XX**
+    * 301 Moved permanently
+    * 304 Not modified
+  * Errores del cliente **4XX**
+    * 400 Bad request
+    * 401 Unauthorized
+    * 403 Forbidden
+    * 404 Not Found
+  * Errores del servidor, ha habido un error al procesar la petición **5XX**
+    *500 Internal server error
