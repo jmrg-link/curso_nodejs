@@ -1,4 +1,4 @@
-
+const store = require('./store')
 
 function addMesage(user,msg){
     return new Promise((resolve,reject)=>{
@@ -12,14 +12,21 @@ function addMesage(user,msg){
                 msg:msg,
                 date:new Date()
             }
+            store.add(fullMsg)
             console.log(fullMsg)
             resolve(fullMsg)
         })
     }
 
+function getMessages(){
+    return new Promise((resolve,reject) => {
+        resolve(store.list())
+    })
 
+}
 
 
 module.exports = {
-    addMesage
+    addMesage,
+    getMessages
 }
